@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import type { Metadata } from "next";
 import "./globals.css";
 import { Nunito } from "next/font/google";
@@ -26,7 +28,6 @@ export default async function RootLayout({
 }>) {
 
   const currentUser = await getCurrentUser()
- console.log('current user inside layout is', currentUser)
  
   return (
     <html lang="en">
